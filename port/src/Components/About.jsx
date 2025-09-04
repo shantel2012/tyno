@@ -26,7 +26,7 @@ const About = () => {
           <p>
             A passionate software developer focused on building modern, responsive, and user-friendly web applications.
             Skilled in HTML, CSS, JavaScript, React, and Tailwind CSS, with growing experience in full-stack development.
-            Dedicated to creating impactful projects while continuously learning and improving in the tech industry.
+            Dedicated to creating impactful projects while continuously learning and improving in the tech industry....
           </p>
           <a
             href="/path-to-your-cv.pdf"
