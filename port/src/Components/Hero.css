@@ -1,0 +1,113 @@
+/* Hero Section Styling */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 8%;
+  background: #000; /* black background */
+  min-height: 100vh;
+  color: #fff;
+  flex-wrap: wrap;
+}
+
+/* Left text */
+.intro {
+  flex: 1;
+  max-width: 550px;
+}
+
+.hello {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #f7d000; /* yellow */
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+}
+
+.intro h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.intro h1 span {
+  color: #f7d000; /* highlight name */
+}
+
+.role {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  font-style: italic;
+  color: #ccc;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-primary {
+  background: #f7d000;
+  color: #000;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #fff;
+  color: #000;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid #f7d000;
+  color: #f7d000;
+  padding: 0.8rem 1.5rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-secondary:hover {
+  background: #f7d000;
+  color: #000;
+}
+
+/* Right image */
+.hero-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-img img {
+  width: 400px;
+  max-width: 100%;
+  border-radius: 20px;
+  border: 4px solid #f7d000;
+  box-shadow: 0 0 20px rgba(247, 208, 0, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 5%;
+  }
+
+  .intro {
+    margin-bottom: 2rem;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+}

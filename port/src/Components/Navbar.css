@@ -1,0 +1,62 @@
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000; /* black background */
+  padding: 1rem 8%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f7d000; /* yellow */
+  letter-spacing: 2px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+/* underline effect */
+.navbar a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #f7d000;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+.navbar a:hover::after,
+.navbar a.active::after {
+  width: 100%;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #f7d000;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .navbar ul {
+    display: none; /* hide for now, can add hamburger later */
+  }
+}
