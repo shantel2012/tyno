@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import GY from "../assets/GY.jpg"; 
+import GY from "../assets/GY.jpg"; // your uploaded image
 import "./Hero.css";
 
 const Hero = () => {
@@ -19,7 +19,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 1 }}
         >
-          I’m <span>Tinomudaishe Kutama</span>
+          I'm <span>Tinomudaishe Kutama</span>
         </motion.h1>
         <motion.p
           className="role"
